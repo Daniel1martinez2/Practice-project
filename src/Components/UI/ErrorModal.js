@@ -1,11 +1,10 @@
-import React from 'react'; 
+import React, {Fragment} from 'react'; 
 import Card from './Card';
 import Button from './Button'; 
 import classes from './ErrorModal.module.css'; 
-import Wrapper from '../Helpers/Wrapper'; 
 const ErrorModal = props => {
   return (
-    <Wrapper>
+    <Fragment>
       <div className={classes.backdrop}></div>
       <Card className={classes.modal} >
         <header className={classes.header}>
@@ -18,7 +17,7 @@ const ErrorModal = props => {
           <Button onClick={props.onCloseModal}>Okay</Button>
         </footer>
       </Card>
-    </Wrapper>
+    </Fragment>
   );
 }
 export default ErrorModal; 
