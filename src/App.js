@@ -16,7 +16,6 @@ const App = () => {
     <div>
       <AddUser onSaveNewUser={saveUserDataHandler} />
       <UserList list={userListData} />
-      
     </div>
   );
 }
